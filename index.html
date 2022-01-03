@@ -9,74 +9,75 @@
             crossorigin="anonymous">
         <link
             rel="stylesheet"
-            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-            crossorigin="anonymous"/>
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Viajes Chile</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand align-items-center " href="#">
-                    <img src="/assets/img/viajes.svg" width="40" alt="Logo de viajes">
-                    <span>Viajes Chile</span></a>
+        <header id="inicio">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand align-items-center " href="#">
+                        <img src="/assets/img/viajes.svg" width="40" alt="Logo de viajes">
+                        <span>Viajes Chile</span></a>
 
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#quienes-somos">Quienes somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#destacados">Destacados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <header>
-            <div
-                id="carouselExampleControls"
-                class="carousel slide"
-                data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
-                    </div>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quienes-somos">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#destacados">Destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
+            </nav>
         </header>
-        <section class="text-light bg-black" ">
+
+        <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <section class="text-light bg-black" id="quienes-somos">
             <div class="container py-5">
                 <h3 class="text-center pb-3">¿Quiénes Somos?</h3>
                 <hr/>
@@ -90,9 +91,15 @@
                             <i class="fas fa-plane"></i>
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quod rem sed eaque perspiciatis, cum, nihil id iste, placeat quaerat est dolorum quo? Qui, eaque. Et eveniet sit ullam quae.
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab laudantium iste harum saepe nemo, mollitia ipsam nam necessitatibus sint minima quia repellat ullam veritatis accusantium tenetur quod est. Quo, nostrum.
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam tenetur sint porro nisi quasi accusamus molestias distinctio a necessitatibus, deserunt quis, temporibus voluptatum deleniti quia, amet explicabo placeat. Quod?
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quod rem
+                            sed eaque perspiciatis, cum, nihil id iste, placeat quaerat est dolorum quo?
+                            Qui, eaque. Et eveniet sit ullam quae. Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Ab laudantium iste harum saepe nemo, mollitia ipsam nam
+                            necessitatibus sint minima quia repellat ullam veritatis accusantium tenetur
+                            quod est. Quo, nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Fugit ipsam tenetur sint porro nisi quasi accusamus molestias distinctio a
+                            necessitatibus, deserunt quis, temporibus voluptatum deleniti quia, amet
+                            explicabo placeat. Quod?
                         </p>
                     </div>
                     <div
@@ -103,10 +110,16 @@
                     flex-column
                   ">
                         <p class="order-lg-3 order-2">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quod rem sed eaque perspiciatis, cum, nihil id iste, placeat quaerat est dolorum quo? Qui, eaque. Et eveniet sit ullam quae.
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab laudantium iste harum saepe nemo, mollitia ipsam nam necessitatibus sint minima quia repellat ullam veritatis accusantium tenetur quod est. Quo, nostrum.
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam tenetur sint porro nisi quasi accusamus molestias distinctio a necessitatibus, deserunt quis, temporibus voluptatum deleniti quia, amet explicabo placeat. Quod?
-                            
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quod rem
+                            sed eaque perspiciatis, cum, nihil id iste, placeat quaerat est dolorum quo?
+                            Qui, eaque. Et eveniet sit ullam quae. Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Ab laudantium iste harum saepe nemo, mollitia ipsam nam
+                            necessitatibus sint minima quia repellat ullam veritatis accusantium tenetur
+                            quod est. Quo, nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Fugit ipsam tenetur sint porro nisi quasi accusamus molestias distinctio a
+                            necessitatibus, deserunt quis, temporibus voluptatum deleniti quia, amet
+                            explicabo placeat. Quod?
+
                         </p>
                         <p
                             class="text-center h3 order-lg-2 order-1 bg-info"
@@ -125,18 +138,98 @@
                             <i class="fas fa-route ml-3"></i>
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quod rem sed eaque perspiciatis, cum, nihil id iste, placeat quaerat est dolorum quo? Qui, eaque. Et eveniet sit ullam quae.
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab laudantium iste harum saepe nemo, mollitia ipsam nam necessitatibus sint minima quia repellat ullam veritatis accusantium tenetur quod est. Quo, nostrum.
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam tenetur sint porro nisi quasi accusamus molestias distinctio a necessitatibus, deserunt quis, temporibus voluptatum deleniti quia, amet explicabo placeat. Quod?
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quod rem
+                            sed eaque perspiciatis, cum, nihil id iste, placeat quaerat est dolorum quo?
+                            Qui, eaque. Et eveniet sit ullam quae. Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Ab laudantium iste harum saepe nemo, mollitia ipsam nam
+                            necessitatibus sint minima quia repellat ullam veritatis accusantium tenetur
+                            quod est. Quo, nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Fugit ipsam tenetur sint porro nisi quasi accusamus molestias distinctio a
+                            necessitatibus, deserunt quis, temporibus voluptatum deleniti quia, amet
+                            explicabo placeat. Quod?
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
-    </body>
+        <section class="text-light bg-black" id="destacados">
+            <div class="container py-5">
+                <h3 class="text-center pb-3">Destacados</h3>
+                <hr>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="./assets/img/card1.jpg" alt="card1"/>
+                            <div class="card-body bg-info">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id minima
+                                    officiis? Tenetur sequi esse nulla praesentium vel veritatis cupiditate!
+                                    Consequuntur tempora beatae voluptate harum maxime placeat molestias dicta
+                                    magnam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="./assets/img/card2.jpg" alt="card2"/>
+                            <div class="card-body bg-info">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id minima
+                                    officiis? Tenetur sequi esse nulla praesentium vel veritatis cupiditate!
+                                    Consequuntur tempora beatae voluptate harum maxime placeat molestias dicta
+                                    magnam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="./assets/img/card3.jpg" alt="card3"/>
+                            <div class="card-body bg-info">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id minima
+                                    officiis? Tenetur sequi esse nulla praesentium vel veritatis cupiditate!
+                                    Consequuntur tempora beatae voluptate harum maxime placeat molestias dicta
+                                    magnam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="./assets/img/card4.jpg" alt="card4"/>
+                            <div class="card-body bg-info">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id minima
+                                    officiis? Tenetur sequi esse nulla praesentium vel veritatis cupiditate!
+                                    Consequuntur tempora beatae voluptate harum maxime placeat molestias dicta
+                                    magnam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
 </html>
