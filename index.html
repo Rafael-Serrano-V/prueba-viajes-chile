@@ -106,11 +106,11 @@
                 <h3 class="text-center pb-3">¿QUIÉNES SOMOS?</h3>
                 <hr/>
                 <div class="row px-2 pt-4">
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-bs-toggle="tooltip" title="Viajes totalmente personalizados" data-bs-placement="top">
                         <p
                             class="text-center h3 bg-info"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ModalViajes"
                             title="Viajes totalmente personalizados">
                             <i class="fas fa-plane"></i>
                         </p>
@@ -133,7 +133,7 @@
                     d-lg-block d-flex
                     flex-column
                   ">
-                        <p class="order-lg-3 order-2">
+                        <p class="order-lg-3 order-2" data-bs-toggle="tooltip"data-bs-placement="bottom" title="Seguro de vida incluido">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quod rem
                             sed eaque perspiciatis, cum, nihil id iste, placeat quaerat est dolorum quo?
                             Qui, eaque. Et eveniet sit ullam quae. Lorem ipsum dolor, sit amet consectetur
@@ -147,187 +147,255 @@
                         </p>
                         <p
                             class="text-center h3 order-lg-2 order-1 bg-info"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="Seguro de vida incluido">
+                            data-bs-toggle="modal"
+                            data-bs-target="#ModalSeguro">
                             <i class="fas fa-mountain ml-3"></i>
                         </p>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 m-md-auto pt-lg-0 pt-4">
+                    <div class="col-12 col-md-6 col-lg-4 m-md-auto pt-lg-0 pt-4" data-bs-toggle="tooltip" title="Rutas de viaje personalizadas" data-bs-placement="top">
                         <p
                             class="text-center  h3 bg-info"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="Rutas de viaje personalizadas">
-                            <i class="fas fa-route ml-3"></i>
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quod rem
-                            sed eaque perspiciatis, cum, nihil id iste, placeat quaerat est dolorum quo?
-                            Qui, eaque. Et eveniet sit ullam quae. Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Ab laudantium iste harum saepe nemo, mollitia ipsam nam
-                            necessitatibus sint minima quia repellat ullam veritatis accusantium tenetur
-                            quod est. Quo, nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Fugit ipsam tenetur sint porro nisi quasi accusamus molestias distinctio a
-                            necessitatibus, deserunt quis, temporibus voluptatum deleniti quia, amet
-                            explicabo placeat. Quod?
-                        </p>
-                    </div>
+                            data-bs-toggle="modal"
+                            data-bs-target="#ModalRutas">
+                        <i class="fas fa-route ml-3"></i>
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quod rem
+                        sed eaque perspiciatis, cum, nihil id iste, placeat quaerat est dolorum quo?
+                        Qui, eaque. Et eveniet sit ullam quae. Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Ab laudantium iste harum saepe nemo, mollitia ipsam nam
+                        necessitatibus sint minima quia repellat ullam veritatis accusantium tenetur
+                        quod est. Quo, nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Fugit ipsam tenetur sint porro nisi quasi accusamus molestias distinctio a
+                        necessitatibus, deserunt quis, temporibus voluptatum deleniti quia, amet
+                        explicabo placeat. Quod?
+                    </p>
                 </div>
             </div>
-        </section>
-        <!--Destacados Section-->
-        <section class="text-light bg-black" id="destacados">
-            <div class="container py-5">
-                <h3 class="text-center pb-3">DESTACADOS</h3>
-                <hr>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="./assets/img/card1.jpg" alt="card1"/>
-                            <div class="card-body bg-info">
-                                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id minima
-                                    officiis? Tenetur sequi esse nulla praesentium vel veritatis cupiditate!
-                                    Consequuntur tempora beatae voluptate harum maxime placeat molestias dicta
-                                    magnam!
-                                </p>
-                            </div>
+        </div>
+    </section>
+    <!--Destacados Section-->
+    <section class="text-light bg-black" id="destacados">
+        <div class="container py-5">
+            <h3 class="text-center pb-3">DESTACADOS</h3>
+            <hr>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="./assets/img/card1.jpg" alt="card1"/>
+                        <div class="card-body bg-info">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id minima
+                                officiis? Tenetur sequi esse nulla praesentium vel veritatis cupiditate!
+                                Consequuntur tempora beatae voluptate harum maxime placeat molestias dicta
+                                magnam!
+                            </p>
                         </div>
                     </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="./assets/img/card2.jpg" alt="card2"/>
-                            <div class="card-body bg-info">
-                                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id minima
-                                    officiis? Tenetur sequi esse nulla praesentium vel veritatis cupiditate!
-                                    Consequuntur tempora beatae voluptate harum maxime placeat molestias dicta
-                                    magnam!
-                                </p>
-                            </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="./assets/img/card2.jpg" alt="card2"/>
+                        <div class="card-body bg-info">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id minima
+                                officiis? Tenetur sequi esse nulla praesentium vel veritatis cupiditate!
+                                Consequuntur tempora beatae voluptate harum maxime placeat molestias dicta
+                                magnam!
+                            </p>
                         </div>
                     </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="./assets/img/card3.jpg" alt="card3"/>
-                            <div class="card-body bg-info">
-                                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id minima
-                                    officiis? Tenetur sequi esse nulla praesentium vel veritatis cupiditate!
-                                    Consequuntur tempora beatae voluptate harum maxime placeat molestias dicta
-                                    magnam!
-                                </p>
-                            </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="./assets/img/card3.jpg" alt="card3"/>
+                        <div class="card-body bg-info">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id minima
+                                officiis? Tenetur sequi esse nulla praesentium vel veritatis cupiditate!
+                                Consequuntur tempora beatae voluptate harum maxime placeat molestias dicta
+                                magnam!
+                            </p>
                         </div>
                     </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="./assets/img/card4.jpg" alt="card4"/>
-                            <div class="card-body bg-info">
-                                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id minima
-                                    officiis? Tenetur sequi esse nulla praesentium vel veritatis cupiditate!
-                                    Consequuntur tempora beatae voluptate harum maxime placeat molestias dicta
-                                    magnam!
-                                </p>
-                            </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="./assets/img/card4.jpg" alt="card4"/>
+                        <div class="card-body bg-info">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id minima
+                                officiis? Tenetur sequi esse nulla praesentium vel veritatis cupiditate!
+                                Consequuntur tempora beatae voluptate harum maxime placeat molestias dicta
+                                magnam!
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--Contacto Section-->
-        <section class="bg-black" id="contacto">
-            <div class="container py-5">
-                <h3 class="text-center pb-4 m-3 text-white">CONTACTO</h3>
-                <hr class="border-bottom">
-                <div class="mb-3">
-                    <label for="nombre" class="form-label text-white">Nombre</label>
-                    <input type="text" class="form-control" id="nombre">
-                </div>
-                <div class="mb-3">
-                    <label for="asunto" class="form-label text-white">Asunto</label>
-                    <input type="text" class="form-control" id="asunto"></input>
-                </div>
-                <div class="mb-3">
-                    <label for="mensaje" class="form-label text-white">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" rows="10"></textarea>
-                </div>
-                <div class="col-auto">
-                    <button type="submit" class="btn btn-info mb-3 text-white">Enviar</button>
-                </div>
-                <div class="col-auto">
-                        
-                    <a href="https://ry7x9jjtysj.typeform.com/to/qLTd1ST5" target="_blank">
+        </div>
+    </section>
+    <!--Contacto Section-->
+    <section class="bg-black" id="contacto">
+        <div class="container py-5">
+            <h3 class="text-center pb-4 m-3 text-white">CONTACTO</h3>
+            <hr class="border-bottom">
+            <div class="mb-3">
+                <label for="nombre" class="form-label text-white">Nombre</label>
+                <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="mb-3">
+                <label for="asunto" class="form-label text-white">Asunto</label>
+                <input type="text" class="form-control" id="asunto"></input>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label text-white">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="10"></textarea>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-info mb-3 text-white">Enviar</button>
+            </div>
+            <div class="col-auto">
+
+                <a href="https://ry7x9jjtysj.typeform.com/to/qLTd1ST5" target="_blank">
                     <button class="btn bg-info text-white">TypeForm</button>
-                    </a>
-                </div>
-            </section>
-           
-            
+                </a>
+            </div>
+        </section>
 
-                
-                    
-
-                
-            
-            <!--Footer Section-->
-            <footer class="bg-info py-2">
-                <div
-                    class="
+        <!--Footer Section-->
+        <footer class="bg-info py-2">
+            <div
+                class="
                 container
                 d-md-flex
                 justify-content-around
                 align-items-center
                 text-white text-center
               ">
-                    <p class="m-0 text-uppercase h1">Viajes Chile</p>
-                    <div class="h1 m-0">
-                        <a
-                            href="https://www.github.com"
-                            target="_blank"
-                            class="text-decoration-none text-white">
-                            <i class="fab fa-github-square"></i>
-                        </a>
-                        <a
-                            href="https://www.linkedin.com"
-                            target="_blank"
-                            class="text-decoration-none text-white">
-                            <i class="fab fa-linkedin ml-2"></i>
-                        </a>
-                        <a
-                            href="https://www.twitter.com"
-                            target="_blank"
-                            class="text-decoration-none text-white">
-                            <i class="fab fa-twitter-square ml-2"></i>
-                        </a>
-                        <a
-                            href="https://www.facebook.com"
-                            target="_blank"
-                            class="text-decoration-none text-white">
-                            <i class="fab fa-facebook-square ml-2"></i>
-                        </a>
+                <p class="m-0 text-uppercase h1">Viajes Chile</p>
+                <div class="h1 m-0">
+                    <a
+                        href="https://www.github.com"
+                        target="_blank"
+                        class="text-decoration-none text-white">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com"
+                        target="_blank"
+                        class="text-decoration-none text-white">
+                        <i class="fab fa-linkedin ml-2"></i>
+                    </a>
+                    <a
+                        href="https://www.twitter.com"
+                        target="_blank"
+                        class="text-decoration-none text-white">
+                        <i class="fab fa-twitter-square ml-2"></i>
+                    </a>
+                    <a
+                        href="https://www.facebook.com"
+                        target="_blank"
+                        class="text-decoration-none text-white">
+                        <i class="fab fa-facebook-square ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="ModalRutas"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-info">
+                        <h5 class="modal-title" id="exampleModalLabel">Rutas de viaje personalizadas</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia soluta
+                        repellat optio laboriosam culpa voluptate asperiores illo, officiis corporis
+                        minima reprehenderit nam sunt vero cupiditate delectus facilis voluptates eius
+                        consectetur!
                     </div>
                 </div>
-            </footer>
+            </div>
+        </div>
+        <div
+            class="modal fade"
+            id="ModalSeguro"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-info">
+                        <h5 class="modal-title" id="exampleModalLabel">Seguro de vida incluido</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia soluta
+                        repellat optio laboriosam culpa voluptate asperiores illo, officiis corporis
+                        minima reprehenderit nam sunt vero cupiditate delectus facilis voluptates eius
+                        consectetur!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="modal fade"
+            id="ModalViajes"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-info">
+                        <h5 class="modal-title" id="exampleModalLabel">Viajes totalmente personalizados</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia soluta
+                        repellat optio laboriosam culpa voluptate asperiores illo, officiis corporis
+                        minima reprehenderit nam sunt vero cupiditate delectus facilis voluptates eius
+                        consectetur!
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <!--Jquery-->
-            <script
-                src="https://code.jquery.com/jquery-3.6.0.min.js"
-                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-                crossorigin="anonymous"></script>
-            <!--Bundle Bootstrap-->
-            <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-                crossorigin="anonymous"></script>
-            <!--Javascript-->
-            <script src="./assets/js/script.js"></script>
+        <!--Bundle Bootstrap-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <!--Jquery-->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+        <!--Javascript-->
+        <script src="./assets/js/script.js"></script>
 
-        </body>
-    </html>
+    </body>
+</html>
